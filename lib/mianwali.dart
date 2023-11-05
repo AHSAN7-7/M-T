@@ -1,40 +1,46 @@
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-class Bhakkar extends StatelessWidget {
-  const Bhakkar({super.key});
+import 'bhakkar.dart';
+
+class Mianwali extends StatelessWidget {
+  const Mianwali({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Bhakkar Division'),
+        title: const Text('Mianwali Division'),
       ),
       body: Center(
         child: Column(
           children: [
             const SizedBox(height: 200,),
             ElevatedButton(
-              child: const Text('Bhakkar City'),
+              child: const Text('Mianwali Urban'),
               onPressed: () {},
-            ).box.roundedFull.px4.make().w32(context).centered(),
+            ).box.roundedFull.px4.make().w40(context).centered(),
             InkWell(radius: 25,
-              child: const Text('Bhakkar Rural').centered(),
+              child: const Text('Mianwali Rural').centered(),
               onTap: () {},
-            ).box.roundedFull.px4.make().w32(context).centered(),
+            ).box.roundedFull.px4.make().w40(context).centered(),
             ElevatedButton(
-              child: const Text('Jhang Road').centered(),
+              child: const Text('ShahbazKhel').centered(),
               onPressed: () {},
-            ).box.roundedFull.px4.make().w32(context),
+            ).box.roundedFull.px4.make().w40(context),
             ElevatedButton(
-              child: const Text('Behal Road'),
+              child: const Text('Liaqatabad'),
               onPressed: () {},
-            ),
+            ).box.roundedFull.px4.make().w40(context),
             ElevatedButton(
-              child: const Text('Mankera'),
+              child: const Text('Kundian'),
               onPressed: () {},
-            ),
-            SizedBox.fromSize(size: Size(0,200),),
+            ).box.roundedFull.px4.make().w40(context),
+            ElevatedButton(
+              child: const Text('WanBhachran'),
+              onPressed: () {},
+            ).box.roundedFull.px4.make().w40(context),
+            SizedBox.fromSize(size: Size(0,160),),
             ElevatedButton(
               // Within the SecondScreen widget
               onPressed: () {

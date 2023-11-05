@@ -1,40 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-class Bhakkar extends StatelessWidget {
-  const Bhakkar({super.key});
+import 'bhakkar.dart';
+
+class KalaBagh extends StatelessWidget {
+  const KalaBagh({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Bhakkar Division'),
+        title: const Text('KalaBagh Division'),
       ),
       body: Center(
         child: Column(
           children: [
             const SizedBox(height: 200,),
             ElevatedButton(
-              child: const Text('Bhakkar City'),
+              child: const Text(' KalaBagh'),
               onPressed: () {},
             ).box.roundedFull.px4.make().w32(context).centered(),
             InkWell(radius: 25,
-              child: const Text('Bhakkar Rural').centered(),
+              child: const Text('KamarMushani').centered(),
               onTap: () {},
             ).box.roundedFull.px4.make().w32(context).centered(),
             ElevatedButton(
-              child: const Text('Jhang Road').centered(),
+              child: const Text('IsaKhel').centered(),
               onPressed: () {},
             ).box.roundedFull.px4.make().w32(context),
-            ElevatedButton(
-              child: const Text('Behal Road'),
-              onPressed: () {},
-            ),
-            ElevatedButton(
-              child: const Text('Mankera'),
-              onPressed: () {},
-            ),
-            SizedBox.fromSize(size: Size(0,200),),
+            SizedBox.fromSize(size: Size(0,250),),
             ElevatedButton(
               // Within the SecondScreen widget
               onPressed: () {
