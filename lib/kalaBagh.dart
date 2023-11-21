@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import 'bhakkar.dart';
@@ -28,7 +29,7 @@ class KalaBagh extends StatelessWidget {
               child: const Text('IsaKhel').centered(),
               onPressed: () {},
             ).box.roundedFull.px4.make().w32(context),
-            SizedBox.fromSize(size: Size(0,250),),
+            const MaxGap(130),
             ElevatedButton(
               // Within the SecondScreen widget
               onPressed: () {

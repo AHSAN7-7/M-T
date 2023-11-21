@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import 'bhakkar.dart';
@@ -40,7 +41,8 @@ class Mianwali extends StatelessWidget {
               child: const Text('WanBhachran'),
               onPressed: () {},
             ).box.roundedFull.px4.make().w40(context),
-            SizedBox.fromSize(size: Size(0,160),),
+           // SizedBox.fromSize(size: Size(0,160),),
+            const MaxGap(130),
             ElevatedButton(
               // Within the SecondScreen widget
               onPressed: () {

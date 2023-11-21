@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class Bhakkar extends StatelessWidget {
@@ -34,7 +35,7 @@ class Bhakkar extends StatelessWidget {
               child: const Text('Mankera'),
               onPressed: () {},
             ),
-            SizedBox.fromSize(size: Size(0,200),),
+            const MaxGap(130),
             ElevatedButton(
               // Within the SecondScreen widget
               onPressed: () {

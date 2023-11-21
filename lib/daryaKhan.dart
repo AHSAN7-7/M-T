@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import 'bhakkar.dart';
@@ -36,7 +37,7 @@ class DaryaKhan extends StatelessWidget {
               child: const Text('DullyWala'),
               onPressed: () {        },
             ).box.roundedFull.px4.make().w40(context).centered(),
-            SizedBox.fromSize(size: Size(0,200),),
+            const MaxGap(130),
             ElevatedButton(
               // Within the SecondScreen widget
               onPressed: () {
