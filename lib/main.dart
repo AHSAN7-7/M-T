@@ -1,10 +1,13 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled3/divisions.dart';
 import 'drawer.dart';
 import 'package:velocity_x/velocity_x.dart';
 import 'package:gap/gap.dart';
 void main()
-{
+async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(
     const MaterialApp( home: MyApp()),);
 }
@@ -15,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+     // debugShowCheckedModeBanner: false,
 
       home: Scaffold(
         appBar: AppBar(title: const Text('My App'),),
@@ -50,10 +53,8 @@ class MyApp extends StatelessWidget {
       ),
       //initialRoute: '/',
       routes: const {
-
        // myRoutes.bk: (context) => const Bhakkar(),
       //  '/second': (context) => const SecondScreen(),
-
       },
 
     );
